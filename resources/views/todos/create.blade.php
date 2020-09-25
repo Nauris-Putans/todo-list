@@ -22,12 +22,6 @@
                            name="title"
                            value="{{ old('caption') }}"
                            autocomplete="title" autofocus>
-
-                    @error('title')
-                    <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
                 </div>
 
                 <div class="row pt-2">

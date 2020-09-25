@@ -126,12 +126,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -148,7 +150,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601026662931</updated>
-      <workItem from="1601026665263" duration="8694000" />
+      <workItem from="1601026665263" duration="11242000" />
     </task>
     <servers />
   </component>
@@ -156,6 +158,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="555" y="190" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601036301937">
+      <screen x="0" y="27" width="1920" height="1003" />
+    </state>
+    <state x="555" y="190" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1003@0.27.1920.1003" timestamp="1601036301937" />
+    <state x="-36" y="162" width="1022" height="737" key="SettingsEditor" timestamp="1601038369916">
+      <screen x="0" y="27" width="1920" height="1003" />
+    </state>
+    <state x="-36" y="162" width="1022" height="737" key="SettingsEditor/0.27.1920.1003@0.27.1920.1003" timestamp="1601038369916" />
     <state x="623" y="246" width="672" height="678" key="search.everywhere.popup" timestamp="1601035164434">
       <screen x="0" y="27" width="1920" height="1003" />
     </state>

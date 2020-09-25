@@ -56,7 +56,6 @@
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
-      <path value="$PROJECT_DIR$/vendor/almasaeed2010/adminlte" />
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
@@ -119,7 +118,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/vendor/filp/whoops" />
       <path value="$PROJECT_DIR$/vendor/league/commonmark" />
-      <path value="$PROJECT_DIR$/vendor/jeroennoten/laravel-adminlte" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hzvJ9SmhkoQwrua1TsUD6RyWTS" />
@@ -150,11 +148,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601026662931</updated>
-      <workItem from="1601026665263" duration="2524000" />
+      <workItem from="1601026665263" duration="6305000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup" timestamp="1601031286586">
+      <screen x="0" y="27" width="1920" height="1003" />
+    </state>
+    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup/0.27.1920.1003@0.27.1920.1003" timestamp="1601031286586" />
   </component>
 </project>

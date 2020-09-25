@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Todo;
 use Illuminate\Http\Request;
 
 class TodoController extends Controller
@@ -19,7 +20,8 @@ class TodoController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->all());
+        Todo::create($request->all());
+        return redirect()->back()->with('message', 'Todo created successfully');
     }
 
     public function edit()

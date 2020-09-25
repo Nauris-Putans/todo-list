@@ -148,7 +148,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601026662931</updated>
-      <workItem from="1601026665263" duration="6305000" />
+      <workItem from="1601026665263" duration="8694000" />
     </task>
     <servers />
   </component>
@@ -156,9 +156,13 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup" timestamp="1601031286586">
+    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup" timestamp="1601035164434">
       <screen x="0" y="27" width="1920" height="1003" />
     </state>
-    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup/0.27.1920.1003@0.27.1920.1003" timestamp="1601031286586" />
+    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup/0.27.1920.1003@0.27.1920.1003" timestamp="1601035164434" />
+    <state x="412" y="394" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601033924793">
+      <screen x="0" y="27" width="1920" height="1003" />
+    </state>
+    <state x="412" y="394" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1920.1003@0.27.1920.1003" timestamp="1601033924793" />
   </component>
 </project>

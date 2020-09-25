@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+    <x-alert />
     <form action="/todos/create" method="post">
         @csrf
 
@@ -13,16 +14,16 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="task" class="col-md-4 col-form-label">{{ __('Task') }}</label>
+                    <label for="title" class="col-md-4 col-form-label">{{ __('Title') }}</label>
 
-                    <input id="task"
+                    <input id="title"
                            type="text"
                            class="form-control @error('caption') is-invalid @enderror"
-                           name="task"
+                           name="title"
                            value="{{ old('caption') }}"
-                           autocomplete="task" autofocus>
+                           autocomplete="title" autofocus>
 
-                    @error('task')
+                    @error('title')
                     <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -30,7 +31,7 @@
                 </div>
 
                 <div class="row pt-2">
-                    <button class="btn btn-primary">Create todo task</button>
+                    <button class="btn btn-primary">Create</button>
                 </div>
 
             </div>

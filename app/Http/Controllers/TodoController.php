@@ -36,7 +36,7 @@ class TodoController extends Controller
     public function store(TodoCreateRequest $request)
     {
         Todo::create($request->all());
-        return redirect()->back()->with('message', 'Todo created successfully');
+        return redirect(route('todo.index'))->with('message', 'Todo created successfully');
     }
 
     /**
@@ -63,5 +63,11 @@ class TodoController extends Controller
     {
         $todo->update(['completed' => true]);
         return redirect()->back()->with('message', 'Task marked as completed');
+    }
+
+    public function incomplete(Todo $todo)
+    {
+        $todo->update(['completed' => false]);
+        return redirect()->back()->with('message', 'Task marked as incompleted');
     }
 }

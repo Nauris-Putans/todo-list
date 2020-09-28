@@ -29,7 +29,15 @@
                         @if($todo->completed)
                             <span class="fa fa-check px-2" style="font-size:30px; color: green; cursor: pointer"></span>
                         @else
-                            <span class="fa fa-check px-2" style="font-size:30px; color: gray; cursor: pointer"></span>
+                            <span onclick="event.preventDefault();
+                                document.getElementById('form-complete-{{ $todo->id }}')
+                                .submit()"
+                                class="fa fa-check px-2" style="font-size:30px; color: gray; cursor: pointer">
+                                
+                            <form style="display: none" id="{{ 'form-complete-'.$todo->id }}" method="post" action="{{ route('todo.complete', $todo->id) }}">
+                                @csrf
+                                @method('patch')
+                            </form>
                         @endif
                     </div>
                 </li>

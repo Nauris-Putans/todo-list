@@ -10,9 +10,10 @@
             <div class="row">
                 <div class="col-8 offset-2">
 
-                    <div class="row d-flex">
-                        <h1>Update todo list</h1>
+                    <div class="d-flex justify-content-center">
+                        <h1 class="text-center">Update todo list</h1>
                     </div>
+                    <hr>
 
                     <div class="form-group row">
                         <label for="title" class="col-md-4 col-form-label">{{ __('Title') }}</label>

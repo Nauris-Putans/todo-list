@@ -13,8 +13,25 @@
 
             <ul class="my-3">
                 @foreach($todos as $todo)
-                <li class="d-flex justify-content-center py-2">
-                    <p>{{$todo->title}}<a href="{{'/todos/'.$todo->id.'/edit'}}" class="mx-4 btn btn-primary" style="background-color: #e98a0d; border-color: #e7890d;">Edit</a></p>
+                <li class="d-flex justify-content-between py-2">
+
+                    @if($todo->completed)
+                        <s><h4>{{$todo->title}}</h4></s>
+                    @else
+                        <h4>{{$todo->title}}</h4>
+                    @endif
+
+                    <div>
+                        <a href="{{'/todos/'.$todo->id.'/edit'}}">
+                            <span class="fa fa-edit px-2" style="font-size:30px; color: black"></span>
+                        </a>
+
+                        @if($todo->completed)
+                            <span class="fa fa-check px-2" style="font-size:30px; color: green; cursor: pointer"></span>
+                        @else
+                            <span class="fa fa-check px-2" style="font-size:30px; color: gray; cursor: pointer"></span>
+                        @endif
+                    </div>
                 </li>
                 @endforeach
             </ul>

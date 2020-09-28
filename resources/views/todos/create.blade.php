@@ -9,9 +9,10 @@
         <div class="row">
             <div class="col-8 offset-2">
 
-                <div class="row">
-                    <h2>What next you need To-Do</h2>
+                <div class="d-flex justify-content-center">
+                    <h1 class="text-center">What next you need To-Do</h1>
                 </div>
+                <hr>
 
                 <div class="form-group row">
                     <label for="title" class="col-md-4 col-form-label">{{ __('Title') }}</label>

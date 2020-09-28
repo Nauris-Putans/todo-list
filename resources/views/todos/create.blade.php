@@ -29,8 +29,6 @@
                     <a href="/todos" class="mx-2 btn btn-danger">Back</a>
                 </div>
 
-
-
             </div>
         </div>
     </form>

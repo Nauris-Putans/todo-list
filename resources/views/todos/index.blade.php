@@ -18,6 +18,9 @@
             <ul class="my-3">
                 @foreach($todos as $todo)
                 <li class="d-flex justify-content-between py-2">
+                    <div>
+                        @include('todos.completeButton')
+                    </div>
 
                     @if($todo->completed)
                         <s><h4>{{$todo->title}}</h4></s>
@@ -30,27 +33,19 @@
                             <span class="fa fa-edit px-2" style="font-size:30px; color: black"></span>
                         </a>
 
-                        @if($todo->completed)
-                            <span onclick="event.preventDefault();
-                                document.getElementById('form-incomplete-{{ $todo->id }}')
-                                .submit()"
-                                class="fa fa-check" style="font-size:30px; color: green; cursor: pointer"></span>
+                        <span class="fa fa-trash px-2" style="font-size:30px; color: #c80000; cursor: pointer"
+                            onclick="event.preventDefault();
+                            if(confirm('Do you really want to delete task - {{ $todo->title }}?'))
+                            {
+                                document.getElementById('form-delete-{{ $todo->id }}')
+                                .submit()
+                            }"
+                        />
 
-                            <form style="display: none" id="{{ 'form-incomplete-'.$todo->id }}" method="post" action="{{ route('todo.incomplete', $todo->id) }}">
-                                @csrf
-                                @method('patch')
-                            </form>
-                        @else
-                            <span onclick="event.preventDefault();
-                                document.getElementById('form-complete-{{ $todo->id }}')
-                                .submit()"
-                                class="fa fa-check" style="font-size:30px; color: gray; cursor: pointer">
-
-                            <form style="display: none" id="{{ 'form-complete-'.$todo->id }}" method="post" action="{{ route('todo.complete', $todo->id) }}">
-                                @csrf
-                                @method('patch')
-                            </form>
-                        @endif
+                        <form style="display: none" id="{{ 'form-delete-'.$todo->id }}" method="post" action="{{ route('todo.delete', $todo->id) }}">
+                            @csrf
+                            @method('delete')
+                        </form>
                     </div>
                 </li>
                 @endforeach

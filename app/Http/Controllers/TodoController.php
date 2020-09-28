@@ -4,34 +4,56 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\TodoCreateRequest;
 use App\Todo;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Redirector;
+use Illuminate\View\View;
 
 class TodoController extends Controller
 {
+    /**
+     * @return Application|Factory|View
+     */
     public function index()
     {
         $todos = Todo::all();
         return view('todos.index', compact('todos'));
     }
 
+    /**
+     * @return Application|Factory|View
+     */
     public function create()
     {
         return view('todos.create');
     }
 
+    /**
+     * @param TodoCreateRequest $request
+     * @return RedirectResponse
+     */
     public function store(TodoCreateRequest $request)
     {
         Todo::create($request->all());
         return redirect()->back()->with('message', 'Todo created successfully');
     }
 
+    /**
+     * @param Todo $todo
+     * @return Application|Factory|View
+     */
     public function edit(Todo $todo)
     {
         return view('todos.edit', compact('todo'));
     }
 
-    public function update(Request $request, Todo $todo)
+    /**
+     * @param TodoCreateRequest $request
+     * @param Todo $todo
+     * @return Application|RedirectResponse|Redirector
+     */
+    public function update(TodoCreateRequest $request,Todo $todo)
     {
         $todo->update(['title' => $request->title]);
         return redirect(route('todo.index'))->with('message', 'Updated!');

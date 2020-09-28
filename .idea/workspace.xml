@@ -22,10 +22,7 @@
     <list default="true" id="62b1f7d1-5134-478c-92d6-95cbf9c072d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TodoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TodoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/todos/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/todos/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/todos/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/todos/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/todos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/todos/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +180,7 @@
       <workItem from="1601026665263" duration="11590000" />
       <workItem from="1601277149515" duration="309000" />
       <workItem from="1601277503899" duration="211000" />
-      <workItem from="1601278344528" duration="6721000" />
+      <workItem from="1601278344528" duration="7466000" />
     </task>
     <servers />
   </component>
@@ -219,10 +216,10 @@
       <screen x="0" y="27" width="1920" height="1003" />
     </state>
     <state x="741" y="443" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1003@0.27.1920.1003" timestamp="1601277210653" />
-    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup" timestamp="1601284933008">
+    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup" timestamp="1601286073870">
       <screen x="0" y="27" width="1920" height="1003" />
     </state>
-    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup/0.27.1920.1003@0.27.1920.1003" timestamp="1601284933008" />
+    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup/0.27.1920.1003@0.27.1920.1003" timestamp="1601286073870" />
     <state x="412" y="394" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601277708292">
       <screen x="0" y="27" width="1920" height="1003" />
     </state>

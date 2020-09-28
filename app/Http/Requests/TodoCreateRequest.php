@@ -28,6 +28,9 @@ class TodoCreateRequest extends FormRequest
         ];
     }
 
+    /**
+     * @return array|string[]
+     */
     public function messages()
     {
         return [

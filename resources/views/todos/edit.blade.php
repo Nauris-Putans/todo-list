@@ -10,12 +10,8 @@
             <div class="row">
                 <div class="col-8 offset-2">
 
-                    <div class="row">
+                    <div class="row d-flex">
                         <h1>Update todo list</h1>
-                    </div>
-
-                    <div class="row">
-                        <h3>- {{$todo->title}}</h3>
                     </div>
 
                     <div class="form-group row">

@@ -9,6 +9,7 @@
             <div class="d-flex justify-content-center">
                 <h1 class="text-center">All your To-Dos |<a href="/todos/create" class="mx-2 btn btn-primary">Create</a></h1>
             </div>
+            <hr>
 
             <ul class="my-3">
                 @foreach($todos as $todo)

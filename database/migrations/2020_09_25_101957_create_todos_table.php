@@ -16,11 +16,10 @@ class CreateTodosTable extends Migration
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->string('title');
             $table->boolean('completed')->default(false);
             $table->timestamps();
-
-            $table->index('user_id');
         });
     }
 

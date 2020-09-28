@@ -59,19 +59,31 @@ class TodoController extends Controller
         return redirect(route('todo.index'))->with('message', 'Updated!');
     }
 
+    /**
+     * @param Todo $todo
+     * @return RedirectResponse
+     */
     public function complete(Todo $todo)
     {
         $todo->update(['completed' => true]);
         return redirect()->back()->with('message', 'Task marked as completed');
     }
 
+    /**
+     * @param Todo $todo
+     * @return RedirectResponse
+     */
     public function incomplete(Todo $todo)
     {
         $todo->update(['completed' => false]);
         return redirect()->back()->with('message', 'Task marked as incompleted');
     }
 
-    public function delete(Todo $todo)
+    /**
+     * @param Todo $todo
+     * @return Application|RedirectResponse|Redirector
+     */
+    public function destroy(Todo $todo)
     {
         $todo->delete();
         return redirect(route('todo.index'))->with('message', 'Task deleted');

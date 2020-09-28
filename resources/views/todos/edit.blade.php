@@ -28,7 +28,7 @@
 
                     <div class="row pt-2">
                         <button class="btn btn-primary">Update</button>
-                        <a href="/todos" class="mx-2 btn btn-danger">Back</a>
+                        <a href="{{ route('todo.index') }}" class="mx-2 btn btn-danger">Back</a>
                     </div>
 
                 </div>

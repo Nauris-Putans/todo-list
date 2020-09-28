@@ -3,9 +3,8 @@
 @section('content')
 <div class="container">
     <x-alert />
-    <form action="/todos/create" method="post">
+    <form action="{{ route('todo.store') }}" method="post">
         @csrf
-
         <div class="row">
             <div class="col-8 offset-2">
 
@@ -27,7 +26,7 @@
 
                 <div class="row pt-2">
                     <button class="btn btn-primary">Create</button>
-                    <a href="/todos" class="mx-2 btn btn-danger">Back</a>
+                    <a href="{{ route('todo.index') }}" class="mx-2 btn btn-danger">Back</a>
                 </div>
 
             </div>

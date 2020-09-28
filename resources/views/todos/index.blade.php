@@ -8,7 +8,7 @@
 
             <div class="d-flex justify-content-center">
                 <h1 class="text-center">All your Todos
-                    <a href="/todos/create" class="mx-2">
+                    <a href="{{ route('todo.create') }}" class="mx-2">
                         <span class="fa fa-plus-circle py-2"></span>
                     </a>
                 </h1>
@@ -29,7 +29,7 @@
                     @endif
 
                     <div>
-                        <a href="{{'/todos/'.$todo->id.'/edit'}}">
+                        <a href="{{ route('todo.edit', $todo->id) }}">
                             <span class="fa fa-edit px-2" style="font-size:30px; color: black"></span>
                         </a>
 
@@ -37,12 +37,12 @@
                             onclick="event.preventDefault();
                             if(confirm('Do you really want to delete task - {{ $todo->title }}?'))
                             {
-                                document.getElementById('form-delete-{{ $todo->id }}')
+                                document.getElementById('form-destroy-{{ $todo->id }}')
                                 .submit()
                             }"
                         />
 
-                        <form style="display: none" id="{{ 'form-delete-'.$todo->id }}" method="post" action="{{ route('todo.delete', $todo->id) }}">
+                        <form style="display: none" id="{{ 'form-destroy-'.$todo->id }}" method="post" action="{{ route('todo.destroy', $todo->id) }}">
                             @csrf
                             @method('delete')
                         </form>

@@ -16,7 +16,7 @@
             <hr>
 
             <ul class="my-3">
-                @foreach($todos as $todo)
+                @forelse($todos as $todo)
                 <li class="d-flex justify-content-between py-2">
                     <div>
                         @include('todos.completeButton')
@@ -48,7 +48,9 @@
                         </form>
                     </div>
                 </li>
-                @endforeach
+                @empty
+                    <h4 class="text-center">No task avalible, create one</h4>
+                @endforelse
             </ul>
         </div>
     </div>

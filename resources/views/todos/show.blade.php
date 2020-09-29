@@ -19,7 +19,7 @@
                     <div class="py-4">
                         <h2 class="text-lg">Steps for this task</h2>
                         @foreach($todo->steps as $step)
-                            <h3>{{ $loop->index. '. '.$step->name }}</h3>
+                            <h3>{{ ($loop->index+1). '. '.$step->name }}</h3>
                         @endforeach
                     </div>
                 @endif

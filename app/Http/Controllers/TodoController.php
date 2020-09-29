@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\TodoCreateRequest;
+use App\Step;
 use App\Todo;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -76,6 +77,25 @@ class TodoController extends Controller
     public function update(TodoCreateRequest $request,Todo $todo)
     {
         $todo->update(['title' => $request->title]);
+
+        if($request->stepName)
+        {
+            foreach ($request->stepName as $key => $value)
+            {
+                $id = $request->stepId[$key];
+                if(!$id)
+                {
+                    $todo->steps()->create(['name' => $value]);
+                }
+
+                else
+                {
+                    $step = Step::find($id);
+                    $step->update(['name' => $value]);
+                }
+            }
+        }
+
         return redirect(route('todo.index'))->with('message', 'Updated!');
     }
 

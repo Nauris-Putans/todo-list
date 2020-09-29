@@ -10,7 +10,7 @@ class TodoStep extends Component
 
     public function increment()
     {
-        $this->steps[] = count($this->steps)+1;
+        $this->steps[] = count($this->steps);
     }
 
     public function remove($index)

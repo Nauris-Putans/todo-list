@@ -53,5 +53,6 @@
             </div>
         </div>
     </form>
+    <livewire:counter>
 </div>
 @endsection

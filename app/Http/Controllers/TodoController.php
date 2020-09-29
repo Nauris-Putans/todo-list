@@ -35,6 +35,11 @@ class TodoController extends Controller
         return view('todos.create');
     }
 
+    public function show(Todo $todo)
+    {
+        return view('todos.show', compact('todo'));
+    }
+
     /**
      * @param TodoCreateRequest $request
      * @return RedirectResponse

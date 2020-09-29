@@ -26,6 +26,15 @@
                                autocomplete="title" autofocus>
                     </div>
 
+                    <div class="form-group row">
+                        <label for="title" class="col-md-8 col-form-label">{{ __('Description') }}</label>
+                        <textarea class="p-2 rounded border"
+                                  cols="100"
+                                  rows="10"
+                                  name="description"
+                                  id="description">{{ $todo->description }}</textarea>
+                    </div>
+
                     <div class="row pt-2">
                         <button class="btn btn-primary">Update</button>
                         <a href="{{ route('todo.index') }}" class="mx-2 btn btn-danger">Back</a>

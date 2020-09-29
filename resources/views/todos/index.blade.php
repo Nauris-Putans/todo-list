@@ -23,9 +23,9 @@
                     </div>
 
                     @if($todo->completed)
-                        <s><h4>{{$todo->title}}</h4></s>
+                        <s><a>{{$todo->title}}</a></s>
                     @else
-                        <h4>{{$todo->title}}</h4>
+                        <a style="cursor: pointer;color: black; font-size: 20px; text-decoration: none" href="{{ route('todo.show', $todo->id) }}">{{$todo->title}}</a>
                     @endif
 
                     <div>

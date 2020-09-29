@@ -25,7 +25,24 @@
 
                 <div class="form-group row">
                     <label for="title" class="col-md-8 col-form-label">{{ __('Description') }}</label>
-                    <textarea class="p-2 rounded border" cols="100" rows="10" name="description" id="description"></textarea>
+                    <textarea class="p-2 rounded border" cols="100" rows="7" name="description" id="description"></textarea>
+                </div>
+
+                <div class="form-group row">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="text-lg">Add steps for task
+                            <a href="{{ route('todo.create') }}" class="mx-2">
+                                <span class="fa fa-plus py-2"></span>
+                            </a>
+                        </h2>
+                    </div>
+
+                    <input id="description"
+                           type="text"
+                           class="form-control @error('caption') is-invalid @enderror"
+                           name="description"
+                           value="{{ old('caption') }}"
+                           autocomplete="description" autofocus>
                 </div>
 
                 <div class="row pt-2">

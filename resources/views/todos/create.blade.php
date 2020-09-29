@@ -15,13 +15,17 @@
 
                 <div class="form-group row">
                     <label for="title" class="col-md-4 col-form-label">{{ __('Title') }}</label>
-
                     <input id="title"
                            type="text"
                            class="form-control @error('caption') is-invalid @enderror"
                            name="title"
                            value="{{ old('caption') }}"
                            autocomplete="title" autofocus>
+                </div>
+
+                <div class="form-group row">
+                    <label for="title" class="col-md-8 col-form-label">{{ __('Description') }}</label>
+                    <textarea class="p-2 rounded border" cols="100" rows="10" name="description" id="description"></textarea>
                 </div>
 
                 <div class="row pt-2">

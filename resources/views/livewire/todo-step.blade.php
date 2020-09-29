@@ -6,17 +6,10 @@
         </h3>
     </div>
 
-    <div class="form-group row d-flex">
-        @for($i = 0; $i < $steps; $i++)
-            <label for="steps" class="col-md-8 col-form-label">Step {{ $i+1 }}
-                <span class="fa fa-times px-2 py-2"></span>
-            </label>
-            <input id="steps"
-                   type="text"
-                   class="form-control @error('caption') is-invalid @enderror"
-                   name="steps"
-                   value="{{ old('caption') }}"
-                   autocomplete="steps" autofocus>
-        @endfor
-    </div>
+    @foreach($steps as $step)
+        <div class="d-flex justify-content-center py-2">
+            <input name="step[]" type="text" class="form-control py-1 px-2" placeholder="{{ 'Step '.$step }}"/>
+            <span class="fa fa-times px-2 py-2" wire:click="remove({{ $loop->index }})" style="cursor: pointer"/>
+        </div>
+    @endforeach
 </div>
